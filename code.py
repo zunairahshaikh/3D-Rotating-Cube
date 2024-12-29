@@ -99,7 +99,7 @@ def main():
         for edge in edges:
             pygame.draw.line(screen, (0,255,0), projected_vertices[edge[0]], projected_vertices[edge[1]],1)
             pygame.display.flip()
-            clock.tick(1000)  #60 fps
+            clock.tick(1000)  #fps
 
     pygame.quit()
 
