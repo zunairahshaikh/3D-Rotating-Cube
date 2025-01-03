@@ -59,7 +59,7 @@ def rotate_z(angle):
 #convert 2d points to 3d points and returning and projecting 3d as 2d points
 def project(points):
     scale = 100                         # scale for conversion b/w dimensions
-    projection_matrix = np.array([      #matrix to discard the z axis
+    projection_matrix = np.array([      # matrix to discard the z axis
         [1,0,0],
         [0,1,0]
     ])
@@ -67,7 +67,7 @@ def project(points):
     projected_points = []
     for point in points:
         projected_point = np.dot(projection_matrix,point)
-        x = int(projected_point[0] * scale) + width //2
+        x = int(projected_point[0] * scale) + width //2       # this fomrmula is to ensure the simulation appears in themiddle of the 800 x 800 screen
         y = int(projected_point[1] * scale) + height //2
         projected_points.append((x,y))
     
