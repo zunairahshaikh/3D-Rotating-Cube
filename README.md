@@ -6,7 +6,7 @@ Ever wanted to feel like you're in a retro 3D graphics demo? No? Well, too bad, 
 This is a Python project that renders a 3D cube that spins as per user input. Why? Because spinning cubes are cool, and sometimes life just needs a bit of geometry in motion. 
 
 ## 🛠️ Technologies Used
-- **Python** 🐍
+- **Python** 
 - **NumPy**
 - **Pygame**
 
